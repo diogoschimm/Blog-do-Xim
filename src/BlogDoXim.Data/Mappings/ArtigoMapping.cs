@@ -40,13 +40,12 @@ namespace BlogDoXim.Data.Mappings
             builder.Property(a => a.Ativo)
                 .HasColumnName("Ativo")
                 .HasColumnType("bit")
-                .HasDefaultValue("0")
+                .HasDefaultValue(false)
                 .IsRequired();
 
             builder.Property(a => a.DataCadastro)
                 .HasColumnName("DataCadastro")
                 .HasColumnType("DateTime")
-                .HasDefaultValue("GETDATE()")
                 .IsRequired();
 
             builder.Property(a => a.DataPublicacao)

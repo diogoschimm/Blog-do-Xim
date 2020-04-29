@@ -35,7 +35,6 @@ namespace BlogDoXim.Data.Mappings
             builder.Property(c => c.DataCadastro)
                 .HasColumnName("DataCadastro")
                 .HasColumnType("DateTime")
-                .HasDefaultValue("GETDATE()")
                 .IsRequired();
 
             builder.Property(c => c.Foto)

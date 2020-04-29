@@ -25,7 +25,6 @@ namespace BlogDoXim.Data.Mappings
             builder.Property(a => a.DataAcesso)
                 .HasColumnName("DataAcesso")
                 .HasColumnType("DateTime")
-                .HasDefaultValue("GETDATE()")
                 .IsRequired();
 
             builder.HasOne(a => a.Artigo)
