@@ -27,8 +27,8 @@ namespace BlogDoXim.ApiDados
         {
             services.AddCors();
             services.AddControllers();
-            
-            services.AddDbContext<BlogDoXimContext>(options => 
+
+            services.AddDbContext<BlogDoXimContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddSwaggerGen(c =>
@@ -88,9 +88,9 @@ namespace BlogDoXim.ApiDados
             }
 
             app.UseRouting();
-             
+
             app.UseCors(x => x
-                .AllowAnyOrigin()
+                .WithOrigins("www.diogoschimm.eti.br", "diogoschimm.eti.br")
                 .AllowAnyMethod()
                 .AllowAnyHeader());
 
