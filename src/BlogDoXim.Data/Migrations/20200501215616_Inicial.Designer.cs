@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogDoXim.Data.Migrations
 {
     [DbContext(typeof(BlogDoXimContext))]
-    [Migration("20200429030304_Inicial")]
+    [Migration("20200501215616_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
